@@ -269,8 +269,8 @@ body section.section-bg {
 @media (max-width: 821px) {
     .container.post {
         width: auto;
-        margin-left: 22px;
-        margin-right: 22px
+        /* margin-left: 22px;
+        margin-right: 22px */
     }
 }
 
@@ -803,3 +803,19 @@ img.avatar {
     align-content: center;
     border-radius: 50%;
 }
+
+/*Some katex responsiveness*/
+.katex-display > .katex {
+    display: inline-block;
+    white-space: nowrap;
+    max-width: 100%;
+    overflow-x: visible;
+    overflow-y: hidden;
+    text-align: initial;
+  }
+  .katex {
+    font: normal 1.21em KaTeX_Main, Times New Roman, serif;
+    line-height: 1.2;
+    white-space: normal;
+    text-indent: 0;
+  }
