@@ -1,0 +1,33 @@
+---
+title: "Molekule blog"
+layout: "base.njk"
+--- 
+
+<section class="container blog">
+  <nav id="breadcrumbs">
+    <span class="archive--title">
+      Blog
+      <h1 class = "cat--title"> Posts más recientes</h1>
+    </span>
+  </nav>
+  <div class="post--bg col-three">
+
+    {%- for post in collections.mecanica_de_fluidos | reverse -%}
+      {%- include 'article-snippet.njk' -%}
+    {%- endfor -%}
+  </div>
+
+</section>
+
+
+{# <div class="section container">
+<h1 class="section-title">Artículos recientes</h1>
+
+  <ul role="list" class="articles__list flow">
+    Datos del artículo #}
+    {# {%- for post in collections.post | reverse -%}
+      {% include "article-snippet.njk" %}
+    {%- endfor -%} #}
+
+  {# </ul>
+</div>. #}

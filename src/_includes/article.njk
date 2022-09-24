@@ -1,0 +1,41 @@
+---
+layout: "base.njk"
+---
+<section class="container post">
+  {# {% include 'breadcrumb-post.njk' %} #}
+  <h1 class="article--title">{{ title }}</h1>
+
+  <div class="author">By: 
+    <a href="/about/" title="Posts by admin" rel="author">{{ author }}</a> 
+    on 
+    {{ date | postDate }}
+  </div>
+
+  <article  class="post--bg">
+    {{ content | safe }}
+  </article>
+  
+  {% include 'pagination.njk' %}
+</section>
+
+
+
+       
+{# <article class="main-article">
+<div class="container container--narrow flow">
+  
+    <h1 class="article-title">
+      {{ title }}
+    </h1>
+    <figure class="main-article__figure">
+      <img src="{{ image | url }}" alt="{{ imageAlt }}">
+      <figcaption>
+        {{ imageAlt }}
+      </figcaption>
+    </figure>
+    
+    {{ content | safe }}
+  
+</div>
+</article> #}
+    

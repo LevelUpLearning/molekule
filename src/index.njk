@@ -1,0 +1,49 @@
+---
+title: "Molekule Principal"
+layout: "base.njk"
+--- 
+
+<section class="no-bottom">
+    <div class="container">
+        <div class="hero--content text-center">
+            <h1 class="section-title">
+                Molekule, Solving a lot of problems
+            </h1>
+            <p>Este es el blog donde encuentras muchos datos, recursos y apuntes para las carreras de Ingeniería Ambiental, Ingeniería de Alimentos, Ingeniería Petroquímica e Ingeniería Química,</p>
+        </div>
+    </div>
+</section>
+<section class="hero">
+    <div class="container">
+        <img src="assets/home-banner.svg" alt="logo de molekule">
+        <div class="grid">
+            <h3 style="color:var(--clr-primary);">Material más reciente</h3>
+            {%- for post in collections.post | reverse | limit_latest(1) -%}
+                {% include "article-latest.njk" %}
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+{# <section class="section-bg home--about">
+    <div class="container">
+        <h2>Acerca de nosotros o algo similar</h2>
+        <p>Esta web es para compartir conocimientos de materias troncales para la carrera de Ing. Química Ing. Ambiental e Ingeniería de Alimentos</p>
+        <p>En la sección de blog encontraras problemas tipo exámen </p>
+        <p>En la  sección de proyecto encontrara problemas de Fenómenos de transporte</p>
+
+    </div>
+</section> #}
+
+<section class="section-bg">
+    <div class="container">
+        <h2 class="section-title">Post más recientes</h2>
+        <p class="no-top">Aquí mostramos el material más reciente</p>
+        <div role="list" class="col-two">
+            {%for post in collections.post | reverse | limit(5) -%}
+                {% include "article-summary.njk" %} 
+            {% endfor %}
+        </div>
+    </div>
+</section>
+

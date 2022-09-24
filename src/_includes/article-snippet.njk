@@ -1,0 +1,30 @@
+<article class="grid">
+    <div>
+        <a href="{{ post.url }}">
+            <img src="{{ post.data.image }}" alt="{{ post.data.imageAlt }}" class="summary--image" width="1000" height="500">
+        </a>
+        <p class="summary--title">
+            <a href="{{ post.url }}">{{ post.data.title }}</a>
+        </p>
+    </div>
+    <span class="topic">
+        {# poner los topicos #}
+        {# {%- if (tag == "tools-page") -%}
+        {%- else -%}
+        <a href="/blog/{{ post.data.categorySlug }}" class="btn btn--primary">{{ post.data.categoryName }}</a>
+        {%- endif -%} #}
+    </span>
+</article>
+
+
+
+{# <li>
+<article class="snippet">
+    <img src="{{ post.data.image | url }}" alt="{{ post.data.imageAlt }}" class ="snippet__image">
+    <h3 class="snippet__title"><a href="{{ post.url | url }}">{{ post.data.title }}</a></h3>
+    <p class="snippet__meta"> publicado en <span>{{ post.data.date | postDate }} </span> por <span>{{ post.data.author }}</span></p>
+    <p class="snippet__body">{{ post.data.description }}</p>
+    <a href="{{ post.url | url }}" class="btn btn--primary">Continuar leyendo</a>
+
+</article>
+</li> #}
