@@ -264,6 +264,14 @@ body section.section-bg {
     .footer--menu {
         padding-bottom: 20px;
     }
+    .article--title {
+        margin-left: 22px;
+        margin-right: 22px;
+    }
+    .author {
+        margin-left: 22px;
+        margin-right: 22px;
+    }
 }
 
 @media (max-width: 821px) {
@@ -271,6 +279,14 @@ body section.section-bg {
         width: auto;
         /* margin-left: 22px;
         margin-right: 22px */
+    }
+    .article--title {
+        margin-left: 22px;
+        margin-right: 22px;
+    }
+    .author {
+        margin-left: 22px;
+        margin-right: 22px;
     }
 }
 
@@ -352,7 +368,34 @@ body section.section-bg {
     .page-header--content>* {
         
         margin-bottom: 12px;
+
     }
+      .primary-nav .nav-list {
+        display: block;
+    }
+    /* .logo {
+        padding-left: 3%;
+    }
+    .primary-nav:before {
+        content: '\2630';
+        display: block;
+        position: absolute;
+        right: 3%;
+        top: -50px;
+        line-height: 40px;
+        font-size: 1.4em;
+        cursor: pointer;
+    }
+    .primary-nav ul li{
+        float:none;
+
+    }
+    .primary-nav ul li a {
+        padding: 10px 3%;
+        line-height: 20px;
+        border-top: 1px solid #333;
+
+    } */
 }
 
 .page-header--content>* {
@@ -367,6 +410,7 @@ body section.section-bg {
 .nav-list {
     margin: 0;
     padding: 0;
+    
 }
 
 .nav-list a {
@@ -376,10 +420,11 @@ body section.section-bg {
 .primary-nav ul>* {
     margin: 0 0.5em;
     padding: 0.5em;
+    
 }
 
 .primary-nav ul {
-    display: flex;
+     display: flex;     
     list-style: none;
     font-size: var(--fs-300);
 }
