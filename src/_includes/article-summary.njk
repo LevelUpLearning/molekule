@@ -1,10 +1,10 @@
 <article role="listitem" class="grid">
     <div>
-        <a href="{{ post.url }}">
-            <img src="{{ post.data.image }}" alt="{{ post.data.imageAlt }}"  width="1000" height="500">
+        <a href="{{ post.url | url }}">
+            <img src="{{ post.data.image | url }}" alt="{{ post.data.imageAlt }}"  width="1000" height="500">
         </a>
         <h3 class="summary--title">
-            <a href="{{ post.url }}">
+            <a href="{{ post.url | url }}">
                 {{ post.data.title }}
             </a>
         </h3>
