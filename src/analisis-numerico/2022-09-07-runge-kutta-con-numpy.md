@@ -268,4 +268,4 @@ plt.show()
 
 La gráfica solución es:
 
-![Conversión glucosa a ácido glucónico](/assets/blog/glucosa2a_gluconico.png)
+![Conversión glucosa a ácido glucónico](../../assets/blog/glucosa2a_gluconico.png)

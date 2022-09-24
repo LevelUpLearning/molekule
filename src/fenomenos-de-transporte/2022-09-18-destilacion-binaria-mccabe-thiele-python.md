@@ -313,7 +313,7 @@ solve_mccabe_thiele()
 
 Ejecutando la gráfica resultante sería:
 
-![Cálculo de etapas McCabe Thiele Metanol- Agua](/assets/blog/mccabe-agua-metanol.png)
+![Cálculo de etapas McCabe Thiele Metanol- Agua](../../assets/blog/mccabe-agua-metanol.png)
 
 ## Referencias
 

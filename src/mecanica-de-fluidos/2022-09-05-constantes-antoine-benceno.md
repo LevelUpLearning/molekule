@@ -157,4 +157,4 @@ Las constante de para el benceno son A = 6.8675, B = 832.2603 °C y C = 250.8452
 
 La gráfica correspondiente es:
 
-![Gráfica resultante](/assets/blog/benceno.png)
+![Gráfica resultante](../../assets/blog/benceno.png)
