@@ -1,4 +1,0 @@
-# https://leveluplearning.github.io/molekule/
-User-agent: *
-Disallow: 
-Sitemap: https://leveluplearning.github.io/molekule/sitemap.xml
