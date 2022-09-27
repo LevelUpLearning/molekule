@@ -334,8 +334,11 @@ body section.section-bg {
 .logo {
     font-size: 40px;
     font-weight: 500;
+    
 }
-
+.logo>a {
+    color: #2c89d2;
+}
 .page-header {
     
     position: relative;
@@ -490,6 +493,7 @@ footer ul.menu-item a {
     display: flex;
     justify-content: end;
     gap: 10px;
+    padding-bottom: 40px;
 }
 svg {
     fill:var(--clr-anchor);
