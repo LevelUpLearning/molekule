@@ -2,7 +2,7 @@
 title: El famoso problema del quitanieve 
 author: Ever Vino
 date: 2022-09-05
-tags: ["post", "mecanica_de_fluidos"]
+tags: ["post", "analisis_numerico"]
 image: /assets/blog/article-1.png
 imageAlt: 
 description: El famoso problema del quitanieve de Ralph Palmer Agnew(1942), en su libro Differential Equations, ha sido por largo tiempo mal resuelta asumiendo una proporcionalidad inexistente. Aquí muestro mi solución.

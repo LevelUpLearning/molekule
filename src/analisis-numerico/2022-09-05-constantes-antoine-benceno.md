@@ -2,7 +2,7 @@
 title: Hallemos las constantes de Antoine para el Benceno
 author: Ever Vino
 date: 2022-09-05
-tags: ["post", "mecanica_de_fluidos"]
+tags: ["post", "analisis_numerico"]
 image: /assets/blog/article-3.jpg
 imageAlt: 
 description: Aquí calculamos los constante de Antoine para el Benceno a partir de datos experimentales, usando las librería numpy, también graficamos la curva resultando con matplotlib.

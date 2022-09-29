@@ -2,7 +2,7 @@
 title: FLujo de gas en un destilador multicomponente
 author: Ever Vino
 date: 2022-09-05
-tags: ["post", "fenomenos_de_transporte"]
+tags: ["post", "analisis_numerico"]
 image: /assets/blog/article-2.jpg
 imageAlt: 
 description: Cálculo del factor del flujo de gas de un destilador, usando el método de la secante.

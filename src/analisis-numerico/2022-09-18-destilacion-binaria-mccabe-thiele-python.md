@@ -2,7 +2,7 @@
 title: Método gráfico Mc-Cabe Thiele para destilación binaria, implementado con python
 author: Ever Vino
 date: 2022-09-18
-tags: ["post", "fenomenos_de_transporte"]
+tags: ["post", "analisis_numerico"]
 image: /assets/blog/article-3.jpg
 imageAlt: 
 description: Usando las librerías de numpy y matplotlib con python mostramos cómo se puede resolver un problema de destilación binaria, con el método de McCabe Thiele.

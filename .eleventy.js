@@ -1,6 +1,7 @@
 const { DateTime } = require("luxon");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 
+
 module.exports = function(eleventyConfig) {
     // Haciendo una copia de los directorios a el dicrectorio publico ""public"
     eleventyConfig.addPassthroughCopy("./src/style.css");
