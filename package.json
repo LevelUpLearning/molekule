@@ -13,7 +13,8 @@
   "devDependencies": {
     "@11ty/eleventy": "^1.0.2",
     "@11ty/eleventy-img": "^2.0.1",
-    "@11ty/eleventy-plugin-syntaxhighlight": "^4.1.0"
+    "@11ty/eleventy-plugin-syntaxhighlight": "^4.1.0",
+    "markdown-it-attrs": "^4.1.4"
   },
   "dependencies": {
     "@iktakahiro/markdown-it-katex": "^4.0.1",
