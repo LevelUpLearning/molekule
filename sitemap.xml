@@ -22,11 +22,6 @@
         </url>
     
         <url>
-            <loc>/molekule/control-automatico/2022-09-05-prueba-control-automatico/</loc>
-            <lastmod>2022-09-05T00:00:00.000Z</lastmod>
-        </url>
-    
-        <url>
             <loc>/molekule/analisis-numerico/2022-09-07-runge-kutta-con-numpy/</loc>
             <lastmod>2022-09-07T00:00:00.000Z</lastmod>
         </url>
@@ -42,38 +37,53 @@
         </url>
     
         <url>
+            <loc>/molekule/control-automatico/p5.9-coughanowr/</loc>
+            <lastmod>2022-10-05T00:00:00.000Z</lastmod>
+        </url>
+    
+        <url>
+            <loc>/molekule/mecanica-fluidos/20-10-05-p39-manometria/</loc>
+            <lastmod>2022-10-05T00:00:00.000Z</lastmod>
+        </url>
+    
+        <url>
             <loc>/molekule/analisis-numerico/</loc>
-            <lastmod>2022-10-05T04:16:39.858Z</lastmod>
+            <lastmod>2022-10-06T03:17:16.418Z</lastmod>
         </url>
     
         <url>
             <loc>/molekule/arduino/</loc>
-            <lastmod>2022-10-05T04:16:39.858Z</lastmod>
+            <lastmod>2022-10-06T03:17:16.418Z</lastmod>
         </url>
     
         <url>
             <loc>/molekule/authors/</loc>
-            <lastmod>2022-10-05T04:16:39.886Z</lastmod>
+            <lastmod>2022-10-06T03:17:16.450Z</lastmod>
         </url>
     
         <url>
             <loc>/molekule/blog/</loc>
-            <lastmod>2022-10-05T04:16:39.886Z</lastmod>
+            <lastmod>2022-10-06T03:17:16.450Z</lastmod>
         </url>
     
         <url>
             <loc>/molekule/control-automatico/</loc>
-            <lastmod>2022-10-05T04:16:39.886Z</lastmod>
+            <lastmod>2022-10-06T03:17:16.454Z</lastmod>
         </url>
     
         <url>
             <loc>/molekule/</loc>
-            <lastmod>2022-10-05T04:16:39.886Z</lastmod>
+            <lastmod>2022-10-06T03:17:16.454Z</lastmod>
+        </url>
+    
+        <url>
+            <loc>/molekule/mecanica-fluidos/</loc>
+            <lastmod>2022-10-06T03:17:16.454Z</lastmod>
         </url>
     
         <url>
             <loc>/molekule/miniproyectos/</loc>
-            <lastmod>2022-10-05T04:16:39.890Z</lastmod>
+            <lastmod>2022-10-06T03:17:16.454Z</lastmod>
         </url>
     
 </urlset>
