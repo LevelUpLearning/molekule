@@ -90,7 +90,7 @@ A continuación se presenta la siguiente tabla que indica los cambios:
     <td class="tg-0pky">campo (Numeric)</td>
   </tr>
   <tr>
-    <td class="tg-0pky">app.EditField</td>
+    <td class="tg-0pky">app.EditField2</td>
     <td class="tg-0pky">edt_numerico2</td>
     <td class="tg-0pky">copia campo (Numeric)</td>
   </tr>
@@ -132,20 +132,25 @@ Podemos ver como App Designer nos lleva la función creada en el botón para ahi
 
 <p style="text-align:center; font-size: small">Figura 6: Entorno de programación de App Designer</p>
 
-el codigo para leer un valor de una caja de texto, copiarlo a una segunda caja de texto y por ultimo sumarle otro numero y colocarlo en una tercera caja de texto es el siguiente:
+El codigo para leer un valor de una caja de texto, copiarlo a una segunda caja de texto y por ultimo sumarle otro numero y colocarlo en una tercera caja de texto es el siguiente:
 
 ``` matlab
-numero=app.edt_numerico.Value           %leera valor del campo numeric y lo guardara en la variable numero
-app.edt_numerico2.Value=numero          %imprimira la variable numero en copia campo numeric
-app.edt_numericoSuma.Value=numero+5     %sumara a la variable numero el valor de 5 e imprimira en sumar valor a campo
+%leera valor del campo numeric y lo guardara en la variable numero
+numero=app.edt_numerico.Value
+%imprimira la variable numero en copia campo numeric           
+app.edt_numerico2.Value=numero
+%sumara a la variable numero el valor de 5 e imprimira en sumar valor a campo          
+app.edt_numericoSuma.Value=numero+5     
 ```
 Si se coloca en el campo numerico una cadena de texto, te adivierte que este campo no acepta cadenas, solo valores numericos.
 
 Para el *button* "OBTENER VALOR" procedemos de manera similar para crear el código (Fig 5).
 
-``` matlab
-texto=app.edt_texto.Value           %leera valor del campo text y lo guardara en la variable texto
-app.edt_texto2.Value=texto          %imprimira la variable texto en copia campo text
+```matlab
+%leera valor del campo text y lo guardara en la variable texto
+texto=app.edt_texto.Value
+%imprimira la variable texto en copia campo text           
+app.edt_texto2.Value=texto          
 ```
 
 El objeto Edit Field (Text) a diferencia del Edit Field (Numeric) acepta cadenas de texto asi como números también, pero si intentamos sumar un valor numérico al número introducido en el campo text, nos dara un error *"Error using matlab.ui.control.EditField/set.Value (line 99) 'Value' must be a character vector or a string scalar."*
@@ -154,7 +159,7 @@ Esto sucede por que al utilizar Edit Field (Text), todo valor que se introduce e
 
 Asi que adecuamos el código a la siguiente manera:
 
-``` matlab
+```matlab
 %leera valor (solo si se introduce numeros) del campo text, lo convierte de cadena 
 %valor numérico, lo copia y le suma el valor de 5 y para volverlo imprimir usa la 
 %función num2str.
@@ -208,3 +213,6 @@ Procedemos a presionar el boton Run del programa, e insertamos los números que 
 <p style="text-align:center; font-size: small">Figura 8: Probando la aplicación terminada</p>
 
 En esta pequeña guia de introducción a la App Designer de Matlab, se ha tratado de dar a conocer el diseño y la codificación de los objetos mas comunmente usados en una aplicación como ser: Edit Field, Button, Axes, Table y sus propiedades mas importantes y como sugerencia, preferir Edit Field (Text) en vez de Edit Field (Numeric) para su codificación.
+
+## Referencia
+* [MatLab Referencia](https://la.mathworks.com/help/matlab/app-designer.html)
