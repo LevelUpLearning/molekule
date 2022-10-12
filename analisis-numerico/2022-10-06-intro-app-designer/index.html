@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GTDD8G8W0R"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-GTDD8G8W0R');
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href='/molekule/style.css'>
+    <link rel="stylesheet" href='/molekule/code-style.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.css" >
+    <title>Introducción a MatLab App Designer</title>
+</head>
+<body><header class = "container--full page-header">
+  
+    <div class="page-header--content">
+        <div class="logo">
+            <a href=/molekule/>
+                molekule
+            </a>
+        </div>
+        <nav class ="primary-nav">
+            <ul role = "list" class = "nav-list">
+                <li role = "list-item"><a href=/molekule/analisis-numerico> Análisis Numérico</a></li>
+                
+                <li role = "list-item"><a href=/molekule/control-automatico> Control Automático</a></li>
+                <li role = "list-item"><a href=/molekule/miniproyectos> Miniproyectos</a></li>
+                <li role = "list-item"><a href=/molekule/mecanica-fluidos> Mecánica de Fluidos</a></li>  
+            </ul>
+        </nav>
+        <nav class ="primary-nav">
+            <ul role = "list" class = "nav-list">
+                <li role = "list-item"><a href=/molekule/authors> About </a></li>
+            </ul>
+        </nav>
+    </div>
+   
+    
+</header><main><section class="container post">
+  
+  <h1 class="article--title">Introducción a MatLab App Designer</h1>
+
+  <div class="author">By: 
+    <a href=/molekule/authors title="Posts by" rel="author">Juan Carlos</a> 
+    on 
+    Oct 6, 2022
+  </div>
+
+  <article  class="post--bg">
+    <h2>¿Que es App Designer?</h2>
+<p>App Designer es un entorno de desarrollo interactivo para diseñar una aplicación y programar su comportamiento. Totalmente integrado con el editor de MATLAB®. Permite distribuir apps empaquetándolas en los archivos del instalador directamente desde la barra de herramientas de App Designer.</p>
+<h3>Entorno de App Designer</h3>
+<p>Podemos acceder al entorno de App Designer desde la penstaña APPS de MatLab o bien escribiendo appdesigner en la ventana de comando y luego presionando la tecla Intro.</p>
+<p style="text-align:center;"><img src="../../assets/blog/appDesigner/fig1.jpg" height="80%" width="80%"/></p>
+<p style="text-align:center; font-size: small">Figura 1: Dos posibles formas de acceder a App Designer desde MatLab</p>
+<p>A pesar de que podemos elegir entre una cantidad de plantillas, elegiremos trabajar con un documento en blanco.</p>
+<p style="text-align:center;"><img src="../../assets/blog/appDesigner/fig2.jpg" height="80%" width="80%"/></p>
+<p style="text-align:center; font-size: small">Figura 2: Pantalla de Inicio de App Designer</p>
+<p>Una vez hecho esto App Designer nos presentara el entorno de trabajo, el cual esta distribuido de la siguiente manera:</p>
+<p style="text-align:center;"><img src="../../assets/blog/appDesigner/fig3.jpg" height="80%" width="80%"/></p>
+<p style="text-align:center; font-size: small">Figura 3: Descripción del entorno de App Designer</p>
+<ul>
+<li>
+<p><strong>Menu de opciones de Designer y Cavas:</strong> La penstaña Designer nos da las opciones de guardar y cargar nuestra aplicación realizada, ademas que nos da la opción de compilarla ya sea como MatLab App, Web App o Desktop App.</p>
+</li>
+<li>
+<p><strong>Librería de Componentes:</strong>  Aquí encontramos todos los componentes necesarios para crear la interfaz gráfica de nuestra aplicación, como ser: objetos para gráficas, botones, cajas de texto, etc.</p>
+</li>
+<li>
+<p><strong>Canvas (Lienzo):</strong>  Área de diseño de la interfaz de nuestra aplicación, simplemente arrastramos los componentes necesarios desde la libreria de componentes hacia el lienzo y los ubicamos en la ubicación requerida.</p>
+</li>
+<li>
+<p><strong>Propiedades de componentes:</strong> Nos da acceso a las propiedades de los componentes seleccionados ubicados dentro del lienzo, como ser: nombre del componente, tamaño de fuente, color de texto, posición, etc.</p>
+</li>
+<li>
+<p><strong>Buscador de componentes:</strong> Nos da acceso a una lista de todos los componentes presentes en el canvas, nos proporciona una forma de poder localizar cualquier componente rapidamente, tambien podemos renombrar cualquier componente desde esa ventana y asignarles un evento en especifico.</p>
+</li>
+</ul>
+<h3>Diseñando la parte gráfica de nuestra aplicación</h3>
+<p>Para diseñar simplemente basta con arrastar los componentes deseados de la libreria de componentes hacia nuestro canvas, ubicarlos en la posición que deseemos, renombrarlos (facilita la programación), cambiar el tamaño del texto que muestran, el color y su alineación.</p>
+<p><em><strong>Programando Button y Edit Field</strong></em></p>
+<p>Creamos la siguiente interfaz de nuestra app:</p>
+<p style="text-align:center;"><img src="../../assets/blog/appDesigner/fig4.jpg" height="100%" width="100%"/></p>
+<p style="text-align:center; font-size: small">Figura 4: Creando la interfaz de la app y cambiando algunos nombres y propiedades</p>
+<p>Ahora se deben de cambiar 2 cosas: el nombre de cada objeto desde el component browser presionando F2 sobre el componente seleccionado o haciendo doble clic sobre el mismo, y el texto que mostraran en la vista de interfaz gráfica mediante su propiedad Text en el panel de propiedades de objetos (Inspector).</p>
+<p>A continuación se presenta la siguiente tabla que indica los cambios:</p>
+<center>
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+</style>
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-0pky">Objeto</th>
+    <th class="tg-0pky">Nombre</th>
+    <th class="tg-0pky">Propiedad Text</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-0pky">app.Button</td>
+    <td class="tg-0pky">btn_ONumero</td>
+    <td class="tg-0pky">OBTENER NUMERO</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">app.Button2</td>
+    <td class="tg-0pky">btn_OTexto</td>
+    <td class="tg-0pky">OBTENER TEXTO</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">app.EditField</td>
+    <td class="tg-0pky">edt_numerico</td>
+    <td class="tg-0pky">campo (Numeric)</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">app.EditField2</td>
+    <td class="tg-0pky">edt_numerico2</td>
+    <td class="tg-0pky">copia campo (Numeric)</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">app.EditField3</td>
+    <td class="tg-0pky">edt_numericoSuma</td>
+    <td class="tg-0pky">suma valor a campo (Numeric)</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">app.EditField4</td>
+    <td class="tg-0pky">edt_texto</td>
+    <td class="tg-0pky">campo (Text)</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">app.EditField5</td>
+    <td class="tg-0pky">edt_texto2</td>
+    <td class="tg-0pky">copia campo (Text)</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">app.EditField6</td>
+    <td class="tg-0pky">edt_textoSuma</td>
+    <td class="tg-0pky">suma valor a campo (Text)</td>
+  </tr>
+</tbody>
+</table>
+</center>
+<p>La interfaz diseñada fue hecha bajo la idea de que cuando se introduzca un valor o una cadena de texto en las Edit Field y luego se presiona el <em>Button</em> “OBTENER NUMERO/TEXTO”, este valor sea copiado a una segunda Edit Field.</p>
+<p>Por lo anteriomente expuesto el codigo para cumplir esta tarea tiene que estar enlazadado al <em>Button</em> “OBTENER NUMERO”, una de las varias formas para hacer esto es seleccionar El <em>Button</em> y dar clic derecho encima de el y elegir la opción <em>Add ButtonPushedFcn callback</em>.</p>
+<p style="text-align:center;"><img src="../../assets/blog/appDesigner/fig5.jpg" height="80%" width="80%"/></p>
+<p style="text-align:center; font-size: small">Figura 5: Una de varias formas de acceder al entorno de programación de App Designer</p>
+<p>Podemos ver como App Designer nos lleva la función creada en el botón para ahi escribir el código necesario para realizar las acciones anteriomente explicadas para el funcionamiento del botón.</p>
+<p style="text-align:center;"><img src="../../assets/blog/appDesigner/fig6.jpg" height="80%" width="80%"/></p>
+<p style="text-align:center; font-size: small">Figura 6: Entorno de programación de App Designer</p>
+<p>El codigo para leer un valor de una caja de texto, copiarlo a una segunda caja de texto y por ultimo sumarle otro numero y colocarlo en una tercera caja de texto es el siguiente:</p>
+<pre class="language-matlab"><code class="language-matlab"><span class="token comment">%leera valor del campo numeric y lo guardara en la variable numero</span><br>numero<span class="token operator">=</span>app<span class="token punctuation">.</span>edt_numerico<span class="token punctuation">.</span>Value<br><span class="token comment">%imprimira la variable numero en copia campo numeric           </span><br>app<span class="token punctuation">.</span>edt_numerico2<span class="token punctuation">.</span>Value<span class="token operator">=</span>numero<br><span class="token comment">%sumara a la variable numero el valor de 5 e imprimira en sumar valor a campo          </span><br>app<span class="token punctuation">.</span>edt_numericoSuma<span class="token punctuation">.</span>Value<span class="token operator">=</span>numero<span class="token operator">+</span><span class="token number">5</span>     </code></pre>
+<p>Si se coloca en el campo numerico una cadena de texto, te adivierte que este campo no acepta cadenas, solo valores numericos.</p>
+<p>Para el <em>button</em> “OBTENER VALOR” procedemos de manera similar para crear el código (Fig 5).</p>
+<pre class="language-matlab"><code class="language-matlab"><span class="token comment">%leera valor del campo text y lo guardara en la variable texto</span><br>texto<span class="token operator">=</span>app<span class="token punctuation">.</span>edt_texto<span class="token punctuation">.</span>Value<br><span class="token comment">%imprimira la variable texto en copia campo text           </span><br>app<span class="token punctuation">.</span>edt_texto2<span class="token punctuation">.</span>Value<span class="token operator">=</span>texto          </code></pre>
+<p>El objeto Edit Field (Text) a diferencia del Edit Field (Numeric) acepta cadenas de texto asi como números también, pero si intentamos sumar un valor numérico al número introducido en el campo text, nos dara un error <em>“Error using matlab.ui.control.EditField/set.Value (line 99) ‘Value’ must be a character vector or a string scalar.”</em></p>
+<p>Esto sucede por que al utilizar Edit Field (Text), todo valor que se introduce en el, se reconoce como una cadena de texto, aunque sean números. Se puede convertir una cadena de texto en forma de número a valor numérico con las funciones <em>(str2double, str2num)</em> y para volver a imprimirlo se debe convertir el valor numérico a cadena de texto con la función <em>num2str</em>.</p>
+<p>Asi que adecuamos el código a la siguiente manera:</p>
+<pre class="language-matlab"><code class="language-matlab"><span class="token comment">%leera valor (solo si se introduce numeros) del campo text, lo convierte de cadena </span><br><span class="token comment">%valor numérico, lo copia y le suma el valor de 5 y para volverlo imprimir usa la </span><br><span class="token comment">%función num2str.</span><br>texto<span class="token operator">=</span><span class="token function">str2num</span><span class="token punctuation">(</span>app<span class="token punctuation">.</span>edt_texto<span class="token punctuation">.</span>Value<span class="token punctuation">)</span>          <br>app<span class="token punctuation">.</span>edt_texto2<span class="token punctuation">.</span>Value<span class="token operator">=</span><span class="token function">num2str</span><span class="token punctuation">(</span>texto<span class="token punctuation">)</span>          <br>app<span class="token punctuation">.</span>edt_textoSuma<span class="token punctuation">.</span>Value<span class="token operator">=</span><span class="token function">num2str</span><span class="token punctuation">(</span>texto<span class="token operator">+</span><span class="token number">5</span><span class="token punctuation">)</span></code></pre>
+<p><em><strong>Programando Axes y Table</strong></em></p>
+<p>Crearemos una nueva Blank App desde la pestaña designer y le crearemos la siguiente interfaz gráfica:</p>
+<p style="text-align:center;"><img src="../../assets/blog/appDesigner/fig7.jpg" height="80%" width="80%"/></p>
+<p style="text-align:center; font-size: small">Figura 7: Interfaz gráfica de nuestra nueva aplicación</p>
+<p>Primero procederemos a crear un código que grafique una parabola, para lo cual deberemos colocar un matriz de valores X la Edit Field <em>valores X</em>, el código calculara los valores de Y con la ecuación <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">y=x^2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">y</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.8141079999999999em;vertical-align:0em;"></span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span></span> y el vector de valores Y calculado se almacenara en el Edit Field <em>valores Y</em>.</p>
+<p>Al mismo tiempo se graficará la curva en el AXES y se le colocará un título y etiquetas en el eje x, y ademas de habilitar la cuadrícula.</p>
+<pre class="language-matlab"><code class="language-matlab"><span class="token comment">%Obtenemos valores X del Edit Field edt_datos</span><br>valoresX<span class="token operator">=</span><span class="token function">str2num</span><span class="token punctuation">(</span>app<span class="token punctuation">.</span>edt_datos<span class="token punctuation">.</span>Value<span class="token punctuation">)</span><br><span class="token comment">%Calculamos valores Y con los valores X obtenidos</span><br>valoresY<span class="token operator">=</span>valoresX<span class="token operator">.^</span><span class="token number">2</span><br><span class="token comment">%Imprimimos los valores Y en la Edit Field edt_resultado</span><br>app<span class="token punctuation">.</span>edt_resultado<span class="token punctuation">.</span>Value<span class="token operator">=</span><span class="token function">num2str</span><span class="token punctuation">(</span>valoresY<span class="token punctuation">)</span><br><span class="token comment">%Procedemos a graficar los valoresX, valoresY</span><br><span class="token function">plot</span><span class="token punctuation">(</span>app<span class="token punctuation">.</span>UIAxes<span class="token punctuation">,</span>valoresX<span class="token punctuation">,</span>valoresY<span class="token punctuation">)</span><br><span class="token comment">%Poniendo titulo, etiqueta a los ejes, cuadricula</span><br><span class="token function">title</span><span class="token punctuation">(</span>app<span class="token punctuation">.</span>UIAxes<span class="token punctuation">,</span><span class="token string">'Gráfica de la función y=x^2'</span><span class="token punctuation">)</span><br><span class="token function">xlabel</span><span class="token punctuation">(</span>app<span class="token punctuation">.</span>UIAxes<span class="token punctuation">,</span><span class="token string">'valores X'</span><span class="token punctuation">)</span><br><span class="token function">ylabel</span><span class="token punctuation">(</span>app<span class="token punctuation">.</span>UIAxes<span class="token punctuation">,</span><span class="token string">'valores Y'</span><span class="token punctuation">)</span><br><span class="token function">grid</span><span class="token punctuation">(</span>app<span class="token punctuation">.</span>UIAxes<span class="token punctuation">,</span><span class="token string">'On'</span><span class="token punctuation">)</span></code></pre>
+<p>Por ultimo faltaria imprimir los valores X, Y en una tabla en vez de una Edit Field, para ello complementamos con el siguiente código:</p>
+<pre class="language-matlab"><code class="language-matlab"><span class="token comment">%Creamos una matriz *datos* la cual concatena las transpuestas de los vectores valoresX, valoresY</span><br>datos<span class="token operator">=</span><span class="token punctuation">[</span>valoresX<span class="token operator">'</span> valoresY<span class="token operator">'</span><span class="token punctuation">]</span><br><span class="token comment">%Colocamos el nombre de cada columna en la que se imprimira la matriz *datos*</span><br>app<span class="token punctuation">.</span>UITable<span class="token punctuation">.</span>ColumnName<span class="token operator">=</span><span class="token punctuation">{</span><span class="token string">'valores x'</span> <span class="token punctuation">,</span> <span class="token string">'valores y'</span><span class="token punctuation">}</span><br><span class="token comment">%Finalmente imprimimos la matriz *datos* en la *Table*</span><br>app<span class="token punctuation">.</span>UITable<span class="token punctuation">.</span>Data<span class="token operator">=</span>datos</code></pre>
+<p>Procedemos a presionar el boton Run del programa, e insertamos los números que deseemos separados por un espacio en el Edit Field valores X, presionamos calcular y observamos los resultados.</p>
+<p style="text-align:center;"><img src="../../assets/blog/appDesigner/fig8.jpg" height="80%" width="80%"/></p>
+<p style="text-align:center; font-size: small">Figura 8: Probando la aplicación terminada</p>
+<p>En esta pequeña guia de introducción a la App Designer de Matlab, se ha tratado de dar a conocer el diseño y la codificación de los objetos mas comunmente usados en una aplicación como ser: Edit Field, Button, Axes, Table y sus propiedades mas importantes y como sugerencia, preferir Edit Field (Text) en vez de Edit Field (Numeric) para su codificación.</p>
+<h2>Referencia</h2>
+<ul>
+<li><a href="https://la.mathworks.com/help/matlab/app-designer.html">MatLab Referencia</a></li>
+</ul>
+
+  </article>
+  
+  <nav class="nav--pagination col-two" role="navigation">
+
+    <span class="nav--previous">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" stroke-width="3" stroke="currentColor" fill="none"><line x1="10.33" y1="32.63" x2="55.78" y2="32.63"/><polyline points="27.56 14.63 10.34 32.79 27.56 49.32"/></svg>
+            <a href="/molekule/mecanica-fluidos/20-10-05-p39-manometria/">Problema 39 Manometría</a></span>
+
+    <span class="nav--next"><a href="/molekule/control-automatico/p5.1-coughanowr/">P5.1 (Process Systems Analysis and Control - Coughanowr, LeBlanc)</a>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" stroke-width="3" stroke="currentColor" fill="none"><line x1="55.78" y1="32.63" x2="10.33" y2="32.63"/><polyline points="38.55 14.63 55.78 32.79 38.55 49.32"/></svg></span>
+    </nav>
+</section>
+
+
+
+       
+
+    
+</main><footer class="site-footer">
+    <div class="logo">
+        <a href=/molekule/>
+                molekule
+            </a>
+        
+        <div class="copyright">
+            <p>© Content 2022</p>
+        </div>
+    </div>
+    
+
+</footer>
+
+</body>
+</html>
