@@ -5,7 +5,7 @@ date: 2022-10-06
 tags: ["post", "analisis_numerico"]
 image: /assets/blog/appDesigner.jpg
 imageAlt: 
-description: Como programar el método de Runge Kutta 4° orden para resolver cualquier sistema de ecuaciones diferenciales con valores iniciales.
+description: Breve introducción a Matlab App Designer, el cual es un entorno de desarrollo interactivo para diseñar una aplicación y programar su comportamiento. Totalmente integrado con el editor de MATLAB®.
 ---
 
 ## ¿Que es App Designer?
