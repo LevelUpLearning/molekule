@@ -2,7 +2,7 @@
 title: Cálculo del factor f de Darcy por Colebrook
 author: Ever Vino
 date: 2022-09-05
-tags: ["post", "fenomenos_de_transporte"]
+tags: ["post", "analisis_numerico"]
 image: /assets/blog/article-2.jpg
 imageAlt: 
 description: Cálculo del factor de fricción f de Darcy con la ecuación de Colebrook, usando el método del punto fijo.

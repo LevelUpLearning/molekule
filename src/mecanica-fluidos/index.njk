@@ -7,13 +7,13 @@ layout: "base.njk"
 <section class="container blog">
   <nav id="breadcrumbs">
     <span class="archive--title">
-      Blog
-      <h1 class = "cat--title"> Posts más recientes</h1>
+      <h1 class = "cat--title"> Control Automático</h1>
+      <h1>Material más reciente</h1>
     </span>
   </nav>
   <div class="post--bg col-three">
 
-    {%- for post in collections.fenomenos_de_transporte | reverse -%}
+    {%- for post in collections.mecanica_fluidos | reverse -%}
       {%- include 'article-snippet.njk' -%}
     {%- endfor -%}
   </div>

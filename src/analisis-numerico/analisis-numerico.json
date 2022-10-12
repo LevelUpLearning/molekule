@@ -1,5 +1,5 @@
 {
-       "layout": "article.njk",
+    "layout": "article.njk",
     "categorySlug": "analisis-numerico",
     "categoryName": "Análisis Numérico"
 }
