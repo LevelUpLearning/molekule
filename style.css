@@ -740,9 +740,10 @@ h1.article--title {
 }
 
 div.author {
-    font-size: 10px;
+    font-size: 20px;
+    margin-top: 20px;
     font-style: italic;
-    margin-bottom: 8px;
+    margin-bottom: 20px;
     color: var(--clr-dark-gray);
 }
 main{
