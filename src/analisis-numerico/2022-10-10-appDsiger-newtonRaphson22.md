@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: Métodos Numericos con App Designer 
 author: Juan Carlos
@@ -13,4 +14,6 @@ description: Resolución de un problema usando Newton Raphson en Matlab App Desi
 ### Newton Raphson
 
 En análisis numérico, el método de Newton es un algoritmo para encontrar aproximaciones de los ceros o raíces de una función real. También puede ser usado para encontrar el máximo o mínimo de una función, encontrando los ceros de su primera derivada.
+=======
+>>>>>>> ee38bb60f88e0c3619988ecdd9240ac0be58814b
 
