@@ -112,48 +112,53 @@
         </url>
     
         <url>
+            <loc>/molekule/control-automatico/p5.5-seborg/</loc>
+            <lastmod>2022-10-14T00:00:00.000Z</lastmod>
+        </url>
+    
+        <url>
             <loc>/molekule/control-automatico/p5.9-seborg/</loc>
             <lastmod>2022-10-14T00:00:00.000Z</lastmod>
         </url>
     
         <url>
             <loc>/molekule/analisis-numerico/</loc>
-            <lastmod>2022-10-14T19:16:08.410Z</lastmod>
+            <lastmod>2022-10-16T02:50:58.196Z</lastmod>
         </url>
     
         <url>
             <loc>/molekule/arduino/</loc>
-            <lastmod>2022-10-14T19:16:08.410Z</lastmod>
+            <lastmod>2022-10-16T02:50:58.196Z</lastmod>
         </url>
     
         <url>
             <loc>/molekule/authors/</loc>
-            <lastmod>2022-10-14T19:16:08.450Z</lastmod>
+            <lastmod>2022-10-16T02:50:58.232Z</lastmod>
         </url>
     
         <url>
             <loc>/molekule/blog/</loc>
-            <lastmod>2022-10-14T19:16:08.450Z</lastmod>
+            <lastmod>2022-10-16T02:50:58.232Z</lastmod>
         </url>
     
         <url>
             <loc>/molekule/control-automatico/</loc>
-            <lastmod>2022-10-14T19:16:08.450Z</lastmod>
+            <lastmod>2022-10-16T02:50:58.232Z</lastmod>
         </url>
     
         <url>
             <loc>/molekule/</loc>
-            <lastmod>2022-10-14T19:16:08.450Z</lastmod>
+            <lastmod>2022-10-16T02:50:58.236Z</lastmod>
         </url>
     
         <url>
             <loc>/molekule/mecanica-fluidos/</loc>
-            <lastmod>2022-10-14T19:16:08.450Z</lastmod>
+            <lastmod>2022-10-16T02:50:58.236Z</lastmod>
         </url>
     
         <url>
             <loc>/molekule/miniproyectos/</loc>
-            <lastmod>2022-10-14T19:16:08.450Z</lastmod>
+            <lastmod>2022-10-16T02:50:58.236Z</lastmod>
         </url>
     
 </urlset>
