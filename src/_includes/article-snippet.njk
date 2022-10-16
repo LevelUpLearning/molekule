@@ -7,6 +7,12 @@
         <p class="summary--title">
             <a href="{{ post.url | url }}">{{ post.data.title }}</a>
         </p>
+        <div class="author">
+            
+            <span>{{ post.data.author }}</span> 
+            publ. 
+            <span>{{ post.date | postDate }}</span>
+        </div>
         <p class="post--summary">
         {{ post.data.description }}
         </p>
